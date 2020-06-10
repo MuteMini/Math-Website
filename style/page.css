@@ -1,42 +1,23 @@
-@font-face{
-    font-family: "Montserrat";
-    src: url("res/Montserrat-Regular.ttf");
+img{
+    width: 100%;
+    max-width: 100%;
+    height: auto;
 }
 
-body{
-    background-color: #c9f1e9;
-}
-.text{
-    font-family: Montserrat, Geneva, sans-serif;
-    text-align: center;
+a{
     color: #444444;
-}
-
-h1{
-    margin: 50px;
-    font-size: 42px;
-    font-weight: 400;
-}
-h2{
-    margin: 30px;
-    font-size: 30px;
-    font-weight: 300;
-}
-h2 strong{
-    font-weight: bold;
-}
-p{
-    margin: 10px;
-    font-size: 18px;
-    font-weight: 400;
-}
-
-form{
+    cursor: pointer;
     display: block;
     margin: auto;
-    text-align: center;
+    text-decoration: none;
+    transition: 0.5s;
 }
-form label{
-    font-size: 20px;
-    font-weight: 300;
+a:hover{
+    color: #888888;
+}
+
+.hint{
+    opacity: 0;
+    display: none;
+    transition: 0.5s;
 }
