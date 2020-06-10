@@ -25,6 +25,9 @@ h2{
 h2 strong{
     font-weight: bold;
 }
+h2 span{
+    font-family: "Courier New", Geneva, sans-serif;
+}
 h3 {
     margin:15px;
     font-size: 30px;
@@ -34,6 +37,13 @@ p{
     margin: 10px;
     font-size: 18px;
     font-weight: 400;
+}
+
+div.space{
+    position: relative;
+    width: 100%;
+    height: 1000px;
+    display: auto;
 }
 
 form{
