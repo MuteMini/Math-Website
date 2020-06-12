@@ -17,12 +17,19 @@
         <h3 class="text">Questions</h3>
         <h2 class="text">As you sovle the questions, round all calculations to the nearest tenth.</h2>
         <img src="res/question1.png">
-        <h2 class="text">So the password should be fully written out, and if not, go back and keep track of what the gray brackets say. The order of the answers matter as well.</h2>
-        <h2 class="text">The password should look something like: <span>2031-4281</span>, not seperated like <span>20 3 1 -4 2 8 1</span>. Whenever a negative appears in your answer, type out the negative sign.</h2>
+        <h2 class="text">Write all of the answers you have gotten into each of the corresponding text boxes to continue.</h2>
         <form name="password">
-            <label class="text" for="password">Enter the password:</label>
-            <input type="text" id="password" name="password" maxlength="11" size="20">
-            <button type="button" onclick="validateForm(1)">Submit</button>
+            <label class="text" for="1a">1A) rounded to nearest tenth.</label>
+            <input type="text" name="input" maxlength="11" size="20"><br>
+            <label class="text" for="1b">1B) rounded to nearest tenth.</label>
+            <input type="text" name="input" maxlength="11" size="20"><br>
+            <label class="text" for="1c">1C) Y axis location to nearest tenth.</label>
+            <input type="text" name="input" maxlength="11" size="20"><br>
+            <label class="text" for="2a">2A) X axis location to nearest tenth.</label>
+            <input type="text" name="input" maxlength="11" size="20"><br>
+            <label class="text" for="2b">2B) rounded to nearest tenth.</label>
+            <input type="text" name="input" maxlength="11" size="20"><br>
+            <button type="button" onclick="validateForm(2)">Submit</button>
         </form>
         <p class="text" id="nofity"></p>
         <a class="text" onclick="openHint();">Click here to see the answers.</a>

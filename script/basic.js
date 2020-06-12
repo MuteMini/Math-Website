@@ -1,20 +1,30 @@
-var answerKey = ["abracadabra", "1", "1", "1", "1"];
+var answerKey = [["abracadabra"],[1.1, 1, 1, 1, 1],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1]];
 
 function validateForm(key){
-    var x = document.forms["password"]["password"].value;
-    var htmlLink;
-    if (x == answerKey[key]) {
-        document.getElementById("nofity").innerHTML = "Great Job! - You'll be redirected soon.";
-        if(key < 4){
-            htmlLink = "page"+(key+1)+".html";
-        } else {
-            htmlLink = "prize.html";
-        }
-        setTimeout(() => { window.location.href = htmlLink;}, 2000)
-    } else {
-        document.getElementById("nofity").innerHTML = "Huh, something is wrong. Double-check your password.";
-        return false;
+    var x = document.forms["password"];
+    var allInput = x["input"];
+    if(typeof allInput[0] === 'undefined'){
+        allInput = Array(allInput);
     }
+    for(var i = 0; i < allInput.length; i++){
+        if (key != 1 && Math.round(allInput[i].value * 10) / 10 == answerKey[key-1][i] || allInput[i].value == answerKey[key-1][i])  {
+            continue;
+        }
+        else {
+            console.log(allInput[i].value);
+            console.log(answerKey[key-1][i]);
+            console.log(key-1);
+            console.log(i);
+            console.log("what");
+            document.getElementById("nofity").innerHTML = "Huh, something is wrong. Double-check your password.";
+            return false;
+        }
+    }
+    document.getElementById("nofity").innerHTML = "Great Job! - You'll be redirected soon.";
+    if(key > 4)
+        setTimeout(() => { window.location.href = "prize.html";}, 2000)
+    else
+        setTimeout(() => { window.location.href = "page"+key+".html";}, 2000)
 }
 
 function openHint(){
