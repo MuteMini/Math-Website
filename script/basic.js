@@ -1,4 +1,4 @@
-var answerKey = [["abracadabra"],[1.1, 1, 1, 1, 1],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1]];
+var answerKey = [["abracadabra"],[27.2, 4.2, 1.7, 2, -0.5],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1],[1, 1, 1, 1, 1]];
 
 function validateForm(key){
     var x = document.forms["password"];
@@ -16,7 +16,7 @@ function validateForm(key){
             console.log(key-1);
             console.log(i);
             console.log("what");
-            document.getElementById("nofity").innerHTML = "Huh, something is wrong. Double-check your password.";
+            document.getElementById("nofity").innerHTML = "Huh, something is wrong. Double-check your answers.";
             return false;
         }
     }
