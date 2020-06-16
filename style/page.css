@@ -23,6 +23,21 @@ a:hover{
     display: none;
     transition: 0.5s;
 }
+.hint a{
+    color: #444444;
+    width: auto;
+    margin: 5px;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    overflow: hidden;
+    transition: 0.5s;
+}
+.hint a:hover{
+    color: #888888;
+    font-size: 21px;
+}
 .hint h2{
     margin: 30px;
     font-size: 20px;

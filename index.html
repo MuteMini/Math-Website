@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="style/basic.css"/>
+        <link rel="stylesheet" type="text/css" href="style/page.css"/>
         <script src="script/basic.js"></script>
     </head>
     <body>
@@ -17,5 +18,13 @@
             <button type="button" onclick="validateForm(1)">Submit</button>
         </form>
         <p class="text" id="nofity"></p>
+        <a class="text" onclick="openHint();">If you want to skip around...</a>
+        <div class="hint" id="hint">
+            <a class="text" href="page1.html">Chapter 2 &amp; 3</a>
+            <a class="text" href="page2.html">Chapter 4, 5 &amp; 6</a>
+            <a class="text" href="page3.html">Chapter 7 &amp; 8</a>
+            <a class="text" href="page4.html">Chapter 1: Functions</a>
+            <a class="text" href="prize.html">Prize Screen</a>
+        </div>
     </body>
 </html>
