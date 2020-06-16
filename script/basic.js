@@ -1,4 +1,4 @@
-var answerKey = [["abracadabra"],[27.2, 4.2, 1.7, 2, -0.5],[6, 12.1, 11.7, 9],[12.7, 7, 3.2, 8.3, 34.4],[1, 1, 1, 1, 1]];
+var answerKey = [["abracadabra"],[27.2, 4.2, 1.7, 2, -0.5],[6, 12.1, 11.7, 9],[12.7, 7, 3.2, 8.3, 34.4],[15, -1, -6, 2, 2]];
 
 function validateForm(key){
     var x = document.forms["password"];
